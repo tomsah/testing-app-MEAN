@@ -1,0 +1,44 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
+    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+  </div>
+</header>
+
+<div class="container">
+
+  hehehheheh
+  <div class="row">
+    <div class="col-lg-12">
+      <form novalidate class="simple-form">
+            <div class="form-group">
+            <label for="urlInput">URL: </label>
+            <input type="text" class="form-control" id="urlInput" placeholder="Url" ng-model="user.name" /><br />
+            <span class="form-control">Url = {{user | json}}</span>   
+            </div>
+
+            <div class="checkbox">
+            <h2>Browser</h2>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" ng-model="user.gender" value="Firefox"> Firefox
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" ng-model="user.gender" value="Chrome"> Chrome
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" ng-model="user.gender" value="Safari"> Safari
+            </label>
+            </div>
+
+            <input type="button" ng-click="reset()" class="btn btn-primary btn-lg" value="Reset" />
+            <input type="submit" ng-click="update(user)" class="btn btn-primary btn-lg" value="Save" />
+          
+        </form>
+<!--       <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>
+      </ul> -->
+    </div>
+  </div>
+</div>
