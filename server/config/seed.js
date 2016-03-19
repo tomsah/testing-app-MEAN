@@ -11,16 +11,16 @@ import Photo from '../api/photo/photo.model';
 Photo.find({}).remove(function(){
   Photo.create({
      "type":"file",
-     "name":"1024_768_dalekjs.com.png"
+     "name":"1024_768_dalekjs.png"
     },{
     "type":"file",
-    "name":"1280_1024_dalekjs.com.png"
+    "name":"1280_1024_dalekjs.png"
     },{
     "type":"file",
-    "name":"400_600_dalekjs.com.png"
+    "name":"400_600_dalekjs.png"
     },{
    "type":"file",
-   "name":"github.com.png"    
+   "name":"github.png"    
   });
 });
 

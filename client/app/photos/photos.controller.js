@@ -3,7 +3,6 @@
 
 class PhotosComponent {
 
-
   constructor($http) {
     this.$http = $http;
     this.awesomePhotos = [];
