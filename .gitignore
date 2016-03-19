@@ -9,3 +9,4 @@ dist
 npm-debug.log
 coverage
 dalek/pics/
+pics/

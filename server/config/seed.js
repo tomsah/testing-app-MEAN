@@ -6,6 +6,24 @@
 'use strict';
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
+import Photo from '../api/photo/photo.model';
+
+Photo.find({}).remove(function(){
+  Photo.create({
+     "type":"file",
+     "name":"1024_768_dalekjs.com.png"
+    },{
+    "type":"file",
+    "name":"1280_1024_dalekjs.com.png"
+    },{
+    "type":"file",
+    "name":"400_600_dalekjs.com.png"
+    },{
+   "type":"file",
+   "name":"github.com.png"    
+  });
+});
+
 
 Thing.find({}).remove()
   .then(() => {
